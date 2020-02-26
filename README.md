@@ -19,10 +19,28 @@ git clone https://github.com/JacobRBlomquist/Soap_Calc_App.git
 npm install
 ```
 
-+ Start NodeMon
++ Run In Production Mode
 
 ```javascript
-npm start
+npm run production
+```
+
++ See Status
+
+```javascript
+npm run status
+```
+
++ See Monitor
+
+```javascript
+npm run monit
+```
+
++ Stop Server
+
+```javascript
+npm run stop
 ```
 
 + View App
