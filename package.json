@@ -7,9 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server.js",
     "production": "pm2 start server.js",
-    "monit" :"pm2 monit",
-    "stop" : "pm2 stop server",
-    "status" : "pm2 list"
+    "monit": "pm2 monit",
+    "stop": "pm2 stop server",
+    "status": "pm2 list"
   },
   "keywords": [
     "soap",
@@ -23,6 +23,7 @@
     "express": "^4.17.1",
     "helmet": "^3.21.3",
     "morgan": "^1.9.1",
-    "nodemon": "^2.0.2"
+    "nodemon": "^2.0.2",
+    "pm2": "^4.2.3"
   }
 }
