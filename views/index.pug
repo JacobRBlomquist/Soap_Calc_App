@@ -1,0 +1,32 @@
+doctype html
+html
+    head
+        link(rel="stylesheet",type="text/css" ,href="/css/main.css")       
+        title= title
+    body
+        h1 Soap Calculator
+
+
+        
+        .container             
+            #superFat.section
+                p superfat
+                label(for='superFatInput') Enter Super Fat Percentage
+                input(type="text" id='superFatInput')
+            #oils.section
+                p oils
+                fieldset
+                    legend Oils
+                    input(type="checkbox" id='coconutOil')
+                    label(for=coconutOil) Coconut Oil
+                    input(type="checkbox" id='olivePomaceOil')
+                    label(for=olivePomaceOil) Olive Oil (Pomace)
+                    input(type="checkbox" id='palmOil')
+                    label(for=palmOil) Palm Oil
+                    input(type="checkbox" id='castorOil')
+                    label(for=castorOil) Castor Oil
+
+        .container
+            #results
+                p results
+            

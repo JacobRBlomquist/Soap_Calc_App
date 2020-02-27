@@ -2,6 +2,7 @@ const express = require('express')
 const app = express();
 const morgan = require('morgan');
 const helmet = require('helmet')
+const path = require('path');
 
 
 //set up logging / errors
@@ -11,6 +12,10 @@ app.use(morgan('dev'))
 app.use(helmet());
 app.disable('x-powered-by');
 
+//template engine
+app.set('view engine','pug')
+app.set('views',path.join(__dirname,'/views'));
+
 //------------------------------
 //ROUTES
 //------------------------------
@@ -18,7 +23,7 @@ app.disable('x-powered-by');
 const homeRoutes = require('./routes/home');
 
 //static route
-app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, '/public')));
 
 //home routes
 app.use('/home', homeRoutes);
