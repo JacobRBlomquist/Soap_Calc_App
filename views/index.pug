@@ -1,53 +1,64 @@
-//- doctype html
+doctype html
 
-html
- head 
-  link(rel="stylesheet",  type="text/css",href="/css/main.css")
- - var squareCount = 25;
-ul(style='--square-count:' + squareCount)
-  - var i = 0;
-  while i < squareCount
-    - var j = 0;
-    while j < squareCount
-      li(style='--animation-order:' + (j + i))
-      - j++
-    - i++
-
-
-//- html(lang='en')
-//-     head
-//-         link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css", integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" ,crossorigin="anonymous")
-//-         link(rel="stylesheet",type="text/css" ,href="/css/main.css")       
-//-         meta(name='viewport' ,content="width=device-width, initial-scale=1, shrink-to-fit=no")
-//-         title= title
-//-     body
-//-         h1 Soap Calculator
+html(lang='en')
+    head
+        link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css", integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" ,crossorigin="anonymous")
+        link(rel="stylesheet",type="text/css" ,href="/css/main.css")       
+        meta(name='viewport' ,content="width=device-width, initial-scale=1, shrink-to-fit=no")
+        title= title
+    body
+        h1 Soap Calculator
 
 
         
-//-         .container             
-//-             #superFat.section
-//-                 p superfat
-//-                 label(for='superFatInput') Enter Super Fat Percentage
-//-                 input(type="text" id='superFatInput')
-//-             #oils.section
-//-                 p oils
-//-                 fieldset
-//-                     legend Oils
-//-                     input(type="checkbox" id='coconutOil')
-//-                     label(for=coconutOil) Coconut Oil
-//-                     input(type="checkbox" id='olivePomaceOil')
-//-                     label(for=olivePomaceOil) Olive Oil (Pomace)
-//-                     input(type="checkbox" id='palmOil')
-//-                     label(for=palmOil) Palm Oil
-//-                     input(type="checkbox" id='castorOil')
-//-                     label(for=castorOil) Castor Oil
+        .container
+            #lyeType.section
+              p Lye Type
 
-//-         .container
-//-             #results
-//-                 p results
+              .form-group
+                input(type="checkbox" id="NaOHType")
+                label(for="NaOHType") NaOH
+                input(type="checkbox" id="KOHType")
+                label(for="KOHType") KOH
+                input(type="checkbox" id="90PNaOHType")
+                label(for="90PNaOHType") 90% NaOH
+
+            #superFat.section
+                p superfat
+                label(for='superFatInput') Enter Super Fat Percentage
+                input(type="text" id='superFatInput')
+            #oils.section
+                p oils
+                .form-group
+                  input(type="checkbox" id='coconutOil')
+                  label(for=coconutOil) Coconut Oil
+                  input(type="checkbox" id='olivePomaceOil')
+                  label(for=olivePomaceOil) Olive Oil (Pomace)
+                  input(type="checkbox" id='palmOil')
+                  label(for=palmOil) Palm Oil
+                  input(type="checkbox" id='castorOil')
+                  label(for=castorOil) Castor Oil
+            #water.section 
+                p Water
+                .form-group
+                  input(type="checkbox" id="waterPercSelector")
+                  label(for="waterPercSelector") Water as % of Oils
+                  input(type="text")
+                .form-group
+                  input(type="checkbox" id="waterLyeConcentrationSelector")
+                  label(for="waterLyeConcentrationSelector") Lye Concentration
+                  input(type="text")
+                .form-group
+                  input(type="checkbox" id="waterLyeRatioSelector")
+                  label(for="waterLyeRatioSelector") Water : Lye Ratio
+                  input(type="text")
 
 
-//- script(src="https://code.jquery.com/jquery-3.4.1.slim.min.js", integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n", crossorigin="anonymous")
-//- script(src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js", integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo", crossorigin="anonymous")
-//- script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js", integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6", crossorigin="anonymous")
+        .container
+            #results
+                p results
+
+
+script(src="https://code.jquery.com/jquery-3.4.1.slim.min.js", integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n", crossorigin="anonymous")
+script(src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js", integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo", crossorigin="anonymous")
+script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js", integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6", crossorigin="anonymous")
