@@ -1,64 +1,38 @@
 doctype html
 
 html(lang='en')
-    head
-        link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css", integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" ,crossorigin="anonymous")
-        link(rel="stylesheet",type="text/css" ,href="/css/main.css")       
-        meta(name='viewport' ,content="width=device-width, initial-scale=1, shrink-to-fit=no")
-        title= title
-    body
-        h1 Soap Calculator
-
-
-        
-        .container
-            #lyeType.section
-              p Lye Type
-
-              .form-group
-                input(type="checkbox" id="NaOHType")
-                label(for="NaOHType") NaOH
-                input(type="checkbox" id="KOHType")
-                label(for="KOHType") KOH
-                input(type="checkbox" id="90PNaOHType")
-                label(for="90PNaOHType") 90% NaOH
-
-            #superFat.section
-                p superfat
-                label(for='superFatInput') Enter Super Fat Percentage
-                input(type="text" id='superFatInput')
-            #oils.section
-                p oils
-                .form-group
-                  input(type="checkbox" id='coconutOil')
-                  label(for=coconutOil) Coconut Oil
-                  input(type="checkbox" id='olivePomaceOil')
-                  label(for=olivePomaceOil) Olive Oil (Pomace)
-                  input(type="checkbox" id='palmOil')
-                  label(for=palmOil) Palm Oil
-                  input(type="checkbox" id='castorOil')
-                  label(for=castorOil) Castor Oil
-            #water.section 
-                p Water
-                .form-group
-                  input(type="checkbox" id="waterPercSelector")
-                  label(for="waterPercSelector") Water as % of Oils
-                  input(type="text")
-                .form-group
-                  input(type="checkbox" id="waterLyeConcentrationSelector")
-                  label(for="waterLyeConcentrationSelector") Lye Concentration
-                  input(type="text")
-                .form-group
-                  input(type="checkbox" id="waterLyeRatioSelector")
-                  label(for="waterLyeRatioSelector") Water : Lye Ratio
-                  input(type="text")
-
-
-        .container
-            #results
-                p results
-
-
-script(src="https://code.jquery.com/jquery-3.4.1.slim.min.js", integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n", crossorigin="anonymous")
-script(src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js", integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo", crossorigin="anonymous")
-script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js", integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6", crossorigin="anonymous")
+  head
+    link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css", integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" ,crossorigin="anonymous")
+    link(rel="stylesheet",type="text/css" ,href="/css/main.css")    
+    //-  noto font
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Roboto&display=swap")
+    meta(name='viewport' ,content="width=device-width, initial-scale=1, shrink-to-fit=no")
+    title= title    
+  body    
+    //- Navbar
+    nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
+      a.navbar-brand(href="#") Navbar
+      button.navbar-toggler(type="button",data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
+        span.navbar-toggler-icon
+      
+      .collapse.navbar-collapse#navbarSupportedContent
+        ul.navbar-nav.mr-auto
+          li.nav-item.active
+            a.nav-link(href="#") Home
+              span.sr-only current
+          li.nav-item.active
+            a.nav-link(href="#") Link
+          li.nav-item.dropdown
+            a.nav-link.dropdown-toggle(href="#", id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria.expanded="false") Dropdown
+            .dropdown-menu(aria-labelledby="navbarDropdown")
+              a.dropdown-item(href="#") Action
+              a.dropdown-item(href="#") Another Action
+              .dropdown-divider
+              a.dropdown-item(href="#") Something else here
+        form.form-inline.my-2.my-lg-0
+          input.form-control.mr-sm-2(type="search" placeholder="Search" aria-label="Search")
+          button.btn.btn-outline-info.my-2.my-sm-0(type="submit") Search
+    
+  script(src="https://code.jquery.com/jquery-3.4.1.slim.min.js", integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n", crossorigin="anonymous")
+  script(src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js", integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo", crossorigin="anonymous")
+  script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js", integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6", crossorigin="anonymous")
