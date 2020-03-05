@@ -43,6 +43,14 @@ npm run monit
 npm run stop
 ```
 
++ Run Development Server
+
+```javascript
+npm start
+```
+<kbd>CTRL</kbd>+<kbd>C</kbd>
+To stop development server.
+
 + View App
 
 Navigate to `localhost:<port>` where `<port>` is the port the server is running on (3000) by default.
