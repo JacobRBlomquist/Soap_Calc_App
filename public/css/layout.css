@@ -7,12 +7,8 @@ body {
 
 #main-container {
   margin: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  width: 100%;
+  height: 100%;
 }
 
 #main-nav {
@@ -75,12 +71,6 @@ body {
   border-radius: 2px;
   margin: 0 auto;
   background-color: white;
-}
-
-#content {
-  position: relative;
-  margin-left: 250px;
-  padding: 0px 10px;
 }
 
 #small-footer {
@@ -146,11 +136,6 @@ body {
   #main-nav footer {
     display: none;
   }
-  #content {
-    margin-left: 10px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-  }
   #small-footer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -172,9 +157,6 @@ body {
     height: 100px;
     bottom: 0;
   }
-  #content {
-    padding-bottom: 40px;
-  }
   #main-container {
     position: relative;
     min-height: 100vh;
@@ -182,4 +164,4 @@ body {
     padding-bottom: 40px;
   }
 }
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=layout.css.map */
