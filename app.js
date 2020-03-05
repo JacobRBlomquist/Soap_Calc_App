@@ -21,12 +21,16 @@ app.set('views',path.join(__dirname,'/views'));
 //------------------------------
 
 const homeRoutes = require('./routes/home');
+const apiRoutes = require("./routes/api")
 
 //static route
 app.use(express.static(path.join(__dirname, '/public')));
 
 //home routes
 app.use('/home', homeRoutes);
+
+//api routes
+app.use("/api",apiRoutes);
 
 //default route - redirect to home
 app.get('/',(req,res,next)=>{

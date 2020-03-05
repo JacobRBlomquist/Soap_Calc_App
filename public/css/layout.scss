@@ -15,6 +15,10 @@ body {
   height: 100%;
 }
 
+#content {
+  margin: 15px 15px 15px 265px;
+}
+
 // Navbar large style
 
 #main-nav {
@@ -64,6 +68,7 @@ body {
 
   footer {
     position: absolute;
+    text-align: left;
     margin-top: auto;
     bottom: 0;
   }
@@ -104,6 +109,10 @@ body {
 }
 
 @media screen and (max-width: 800px) {
+  #content {
+    margin: 40px 15px 40px 15px;
+  }
+
   #main-nav {
     // height:50px;
     min-height: 0;

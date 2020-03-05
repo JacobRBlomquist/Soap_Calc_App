@@ -11,6 +11,10 @@ body {
   height: 100%;
 }
 
+#content {
+  margin: 15px 15px 15px 265px;
+}
+
 #main-nav {
   position: fixed;
   left: 0;
@@ -60,6 +64,7 @@ body {
 
 #main-nav footer {
   position: absolute;
+  text-align: left;
   margin-top: auto;
   bottom: 0;
 }
@@ -94,6 +99,9 @@ body {
 }
 
 @media screen and (max-width: 800px) {
+  #content {
+    margin: 40px 15px 40px 15px;
+  }
   #main-nav {
     min-height: 0;
     width: 100%;
