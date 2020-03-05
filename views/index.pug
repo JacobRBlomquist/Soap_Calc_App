@@ -1,46 +1,6 @@
-doctype html
 
-html(lang='en')
-  head
-    //- link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css", integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" ,crossorigin="anonymous")
-    link(rel="stylesheet",type="text/css" ,href="/css/main.css")    
-    //-  noto font
-    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Roboto&display=swap")
-    meta(name='viewport' ,content="width=device-width, initial-scale=1, shrink-to-fit=no")
-    title= title
+extends layout.pug
 
-    //- Font Awesome
-    link(rel="stylesheet" href="/fontawesome/css/all.css")
-    script(defef src="/fontawesome/js/all.js")
-
-  
-  body    
-    #main-container
-      //- Navbar
-      nav#main-nav
-        h2 Title
-        p An improved calculator
-        
-        ul
-          li
-            a(href="#") About
-          li
-            a(href="#") Donate
-          li
-            a(href="#") License
-        
-        .divider
-
-        footer#nav-footer
-          p &copy; Jacob Blomquist 2020
-          p Happy Touch Handmade Soap Company
-
-      #content
-        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati corrupti odit vel maxime labore excepturi, libero necessitatibus deleniti suscipit ullam ipsum id aut dolorum quam voluptas. Assumenda, totam dicta ex repudiandae accusantium quia corporis voluptate quisquam quibusdam delectus provident cum voluptates sunt? Commodi, vero officiis. Totam eaque aperiam facilis quisquam, placeat exercitationem magni eius laboriosam sint odit molestias ea dolores molestiae amet, enim recusandae. Omnis, minima ratione doloremque adipisci cupiditate magnam. Sit velit veritatis incidunt asperiores quod eius omnis aspernatur minima expedita reiciendis esse praesentium accusamus laborum voluptate nesciunt facilis ratione quas, quam eligendi, beatae voluptatem assumenda. Dignissimos voluptates, saepe numquam sint harum eos. Libero dignissimos vero quo repudiandae cupiditate architecto ipsam maxime ad quas? Cum nesciunt suscipit odit nihil, quos explicabo, unde vitae, dolorem iure fugiat voluptatem quis voluptatibus! Nihil neque debitis, ut ipsa aliquid beatae maxime? Eligendi hic at, possimus dicta vero excepturi minima iste sequi quos, accusamus natus dolores sapiente dolorum a consectetur magni odio aut dolorem, quod sit ea odit modi enim maiores. Possimus accusantium consectetur iure, dignissimos facilis illum a suscipit mollitia asperiores. Dolore reprehenderit quod voluptates maiores nam recusandae voluptate blanditiis distinctio, nobis praesentium, perspiciatis perferendis animi, nemo delectus? Sequi temporibus impedit quidem id voluptas. Assumenda distinctio molestias, dicta eligendi non magnam rem quas quos pariatur sed quisquam placeat aut dignissimos ullam deleniti eum maxime vel. Quidem minima nulla, suscipit placeat perferendis necessitatibus ipsam pariatur magnam distinctio beatae sequi porro, ratione vel laborum aut ut cum. Debitis dolores non temporibus quasi, molestiae officia suscipit delectus voluptatibus inventore omnis veritatis exercitationem nobis corrupti, consequuntur corporis velit quis asperiores alias ipsa aperiam cum facere nesciunt! Veritatis aspernatur quibusdam aliquid aut dolores, quae ad, exercitationem, autem mollitia repellat nulla ratione. Voluptates adipisci totam, necessitatibus distinctio quibusdam excepturi corrupti ducimus eaque praesentium a reiciendis eius enim itaque accusamus impedit sint maiores iure dolorum in ab possimus cupiditate sit tempora perspiciatis! Expedita, doloremque cumque! Asperiores perferendis molestiae officia tempore, nostrum error aut at dolores quaerat illum placeat corrupti, ipsum blanditiis! Ipsa explicabo amet vel aspernatur nisi illum, assumenda porro necessitatibus? Eaque perspiciatis possimus aspernatur eum eos doloremque, neque, eveniet aliquam asperiores delectus porro placeat a obcaecati animi omnis sequi fugiat commodi. Modi alias sunt animi perferendis quidem aliquam ducimus. Quam perspiciatis eaque, atque a fugit doloremque sed incidunt cumque, aspernatur in quas numquam mollitia, dolorum vero vel illo aliquam non. Beatae sit cupiditate quod unde, voluptatum fugiat esse error tenetur consequatur iste autem totam facere reprehenderit voluptatem quasi id quisquam sequi placeat nam ullam reiciendis? Error, animi iste. Dolorem animi molestias odio ducimus repellendus. Sapiente perferendis corrupti error esse earum provident nemo quam quidem impedit praesentium? Reprehenderit, excepturi culpa tempore atque nesciunt beatae, quaerat expedita officiis ex ut perferendis voluptatem laudantium explicabo nam dolore dignissimos quisquam, fuga enim vitae recusandae consequatur? Facilis, molestias nostrum delectus dolore maxime architecto explicabo quisquam atque vitae in natus quam porro ab aliquam asperiores ducimus quis nulla, ex sequi sapiente incidunt minima minus perspiciatis similique! Possimus quas nam aperiam cum modi sint voluptates provident.
-
-      footer#small-footer 
-        p &copy; Jacob Blomquist 2020 - Happy Touch Handmade Soap Co.
-      
-  script(src="https://code.jquery.com/jquery-3.4.1.slim.min.js", integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n", crossorigin="anonymous")
-  //- script(src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js", integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo", crossorigin="anonymous")
-  //- script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js", integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6", crossorigin="anonymous")
+block content
+  #content
+    h1 this is content
