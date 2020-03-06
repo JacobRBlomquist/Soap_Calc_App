@@ -10,7 +10,7 @@
     "monit": "pm2 monit",
     "stop": "pm2 stop server",
     "status": "pm2 list",
-    "pkg" : "pkg --targets=node12 ."
+    "pkg": "pkg --targets=latest ."
   },
   "keywords": [
     "soap",
@@ -18,20 +18,24 @@
     "node",
     "HappyTouchSoap"
   ],
-  "bin":"./server.js",
+  "bin": "./server.js",
   "author": "Jacob R. Blomquist",
   "license": "MIT",
   "devDependencies": {
-    "nodemon": "^2.0.2"
+    "nodemon": "^2.0.2",
+    "pkg": "^4.4.4"
   },
   "dependencies": {
     "express": "^4.17.1",
     "helmet": "^3.21.3",
-    "morgan": "^1.9.1",    
+    "morgan": "^1.9.1",
     "pm2": "^4.2.3",
     "pug": "^2.0.4"
   },
-  "pkg":{
-    "assets": ["views/**/*",".public/**/**/**"]
+  "pkg": {
+    "assets": [
+      "views/**/*",
+      "public/**/*"
+    ]
   }
 }
