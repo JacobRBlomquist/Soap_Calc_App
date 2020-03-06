@@ -22,10 +22,10 @@
   "author": "Jacob R. Blomquist",
   "license": "MIT",
   "devDependencies": {
-    "nodemon": "^2.0.2",
     "pkg": "^4.4.4"
   },
   "dependencies": {
+    "nodemon": "^2.0.2",
     "express": "^4.17.1",
     "helmet": "^3.21.3",
     "morgan": "^1.9.1",
