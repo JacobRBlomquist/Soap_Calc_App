@@ -11,7 +11,10 @@ html(lang='en')
 
         //- Font Awesome
         link(rel="stylesheet" href="/fontawesome/css/all.css")
-        script(defef src="/fontawesome/js/all.js")
+        script(defer src="/fontawesome/js/all.js")
+
+        //- JQUERY
+        script(defer src="/jquery/jquery-3.4.1.min.js")
 
         block head
 
@@ -29,7 +32,7 @@ html(lang='en')
                     li
                         a(href="/home/about") About
                     li
-                        a(href="#") Donate
+                        a(href="#" id="Donate") Donate
                     li
                         a(href="#") License
                     li
@@ -46,6 +49,8 @@ html(lang='en')
             footer#small-footer 
                 p &copy; Jacob Blomquist 2020 - Happy Touch Handmade Soap Co.
 
-    script(src="https://code.jquery.com/jquery-3.4.1.slim.min.js", integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n", crossorigin="anonymous")
+
+    
+
     //- script(src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js", integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo", crossorigin="anonymous")
     //- script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js", integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6", crossorigin="anonymous")
