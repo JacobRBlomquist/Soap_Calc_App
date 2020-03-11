@@ -48,8 +48,13 @@ body {
     padding: 0;
 
     li {
-      padding: 10px 10px;
+      // padding: 10px 10px;
       color: $main-color;
+    }
+
+    a {
+      display: inline-block;
+      padding: 10px 10px;
     }
   }
 
@@ -57,6 +62,7 @@ body {
     background-color: #777;
     color: #0d4e63;
   }
+
   a {
     text-decoration: none;
     color: inherit;
@@ -150,7 +156,9 @@ body {
     }
 
     a {
-      padding: 0;
+      padding: 0px;
+      display: inline-block;
+      padding: 5px;
     }
 
     footer {

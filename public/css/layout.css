@@ -44,8 +44,12 @@ body {
 }
 
 #main-nav ul li {
-  padding: 10px 10px;
   color: #1ba4d1;
+}
+
+#main-nav ul a {
+  display: inline-block;
+  padding: 10px 10px;
 }
 
 #main-nav ul li:hover {
@@ -139,7 +143,9 @@ body {
     padding: 5px;
   }
   #main-nav a {
-    padding: 0;
+    padding: 0px;
+    display: inline-block;
+    padding: 5px;
   }
   #main-nav footer {
     display: none;
