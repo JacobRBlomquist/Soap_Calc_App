@@ -105,6 +105,8 @@ body {
 @media screen and (max-width: 800px) {
   #content {
     margin: 40px 15px 40px 15px;
+    padding-top: 65px;
+    overflow: hidden;
   }
   #main-nav {
     min-height: 0;
@@ -122,6 +124,7 @@ body {
             align-items: center;
     margin: 0px;
     padding: 0px;
+    overflow: hidden;
   }
   #main-nav h2 {
     margin: 0px;
