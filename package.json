@@ -22,15 +22,17 @@
   "author": "Jacob R. Blomquist",
   "license": "MIT",
   "devDependencies": {
+    "ejs-lint": "^1.1.0",
     "pkg": "^4.4.4"
   },
   "dependencies": {
-    "nodemon": "^2.0.2",
+    "ejs": "^3.0.2",
     "express": "^4.17.1",
+    "express-partials": "^0.3.0",
     "helmet": "^3.21.3",
     "morgan": "^1.9.1",
-    "pm2": "^4.2.3",
-    "pug": "^2.0.4"
+    "nodemon": "^2.0.2",
+    "pm2": "^4.2.3"
   },
   "pkg": {
     "assets": [

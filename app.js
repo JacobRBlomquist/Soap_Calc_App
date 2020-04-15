@@ -4,6 +4,7 @@ const morgan = require('morgan');
 const helmet = require('helmet')
 const path = require('path');
 const bodyParser = require('body-parser')
+const partials = require('express-partials');
 
 app.use(bodyParser.urlencoded({
     extended: true
@@ -19,8 +20,11 @@ app.use(helmet());
 app.disable('x-powered-by');
 
 //template engine
-app.set('view engine', 'pug')
+app.use(partials())
+app.set('view engine', 'ejs')
 app.set('views', path.join(__dirname, '/views'));
+app.set('view options',{layout:'layouts/layout.ejs'})
+
 
 //------------------------------
 //ROUTES
