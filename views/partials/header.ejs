@@ -1,19 +1,51 @@
-<!-- views/partials/header.ejs -->
-
-<nav class="navbar navbar-default" role="navigation">
-    <div class="container-fluid">
-    
-        <div class="navbar-header">
-            <a class="navbar-brand" href="#">
-                <span class="glyphicon glyphicon glyphicon-tree-deciduous"></span>
-                Soap Calc App
-            </a>
-    
-            <ul class="nav navbar-nav">
-                <li><a href="/home">Home</a></li>
-                <li><a href="/home/about">About</a></li>
-            </ul>
-        </div>
-    
+<nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="/home">
+            <span class="icon">
+                <i class="fas fa-flask"></i>
+            </span>
+        </a>
+        <a role="button" class="navbar-burger burger" id="burgerToggle" aria-label="menu" aria-expanded="false"
+            data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
     </div>
-    </nav>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+            <a class="navbar-item" href="/home">
+                Home
+            </a>
+
+            <a class="navbar-item" href="/home/about">
+                About
+            </a>
+
+            <!-- <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                    More
+                </a>
+
+                <div class="navbar-dropdown">
+                    <a class="navbar-item">
+                        About
+                    </a>
+                    <a class="navbar-item">
+                        Jobs
+                    </a>
+                    <a class="navbar-item">
+                        Contact
+                    </a>
+                    <hr class="navbar-divider">
+                    <a class="navbar-item">
+                        Report an issue
+                    </a>
+                </div>
+            </div> -->
+        </div>
+
+
+    </div>
+</nav>
