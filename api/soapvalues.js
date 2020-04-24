@@ -1,4 +1,4 @@
-[
+var soapdata = [
     {
         "id": 145,
         "name": "Abyssinian Oil",
@@ -2235,3 +2235,5 @@
         "linolenic": 0
     }
 ]
+
+module.exports = soapdata;
