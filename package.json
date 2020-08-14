@@ -26,6 +26,7 @@
     "pkg": "^4.4.4"
   },
   "dependencies": {
+    "busboy": "^0.3.1",
     "ejs": "^3.0.2",
     "express": "^4.17.1",
     "express-partials": "^0.3.0",

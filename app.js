@@ -6,11 +6,11 @@ const path = require('path');
 const bodyParser = require('body-parser')
 const partials = require('express-partials');
 
+app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
     extended: true
 }));
 
-app.use(bodyParser.json());
 
 //set up logging / errors
 app.use(morgan('dev'))
